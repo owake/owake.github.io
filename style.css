@@ -1,0 +1,182 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+h1 { 
+  color:white;
+  text-align: center;
+  font-family: 'Major Mono Display', monospace;
+  padding: 10px;
+}
+
+h6 { color:#7a7a7a;
+    font-family: 'Inconsolata', sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+
+     }
+h5 { color:#7a7a7a;
+    font-family: 'Inconsolata', sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+
+     }
+button { 
+  
+  
+}
+a
+{
+	font-family: 'Major Mono Display', monospace;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: rgba(200,200,200,0);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgba(100,100,100,0.6);
+}
+
+div.gallery {
+  
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+	color:white;
+font-family: 'Major Mono Display', monospace;
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding:  0px 20px 0px 20px;
+  float: left;
+  width: 33.33%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+iframe {
+  border: none;
+}
+
+.relation {
+  position: relative;
+}
+
+
+.relation1 {
+  position: relative;
+  max-width: 800px;
+
+  margin: auto;
+  margin-bottom:20px;
+}
+
+.relation_ratio1 {
+  padding-top: 56.25%;
+  height: 0;
+}
+
+/* padding_top 16/9 = (100/16)*9 = 56.25% 
+*/
+
+.relation_content1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+header { 
+  padding-right: 10vw;
+    padding-left: 10vw;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap; 
+  flex-flow: row wrap; 
+  display: -webkit-box;
+  display: flex;
+}
+header div { 
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto; 
+  width: 200px; 
+  margin: .5vw; 
+}
+header div img { 
+  width: 100%; 
+  height: auto; 
+}
+@media screen and (max-width: 400px) {
+  header div { margin: 0; }
+  header { padding: 0; }
+  
+}
+
+
+
+
+
