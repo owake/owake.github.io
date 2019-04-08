@@ -90,15 +90,15 @@ font-family: 'Major Mono Display', monospace;
 }
 
 .responsive {
-  padding:  0px 20px 0px 20px;
+  padding:  0px 50px 0px 50px;
   float: left;
   width: 50%;
 }
 
 @media only screen and (max-width: 700px) {
   .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
+    width: 100%;
+    margin: 6px ;
   }
 }
 
@@ -175,8 +175,3 @@ header div img {
   header { padding: 0; }
   
 }
-
-
-
-
-
