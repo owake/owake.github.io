@@ -34,7 +34,6 @@ function draw() {
 
    if(mouseIsPressed==true){
      background(0,0)
-     console.log("mouseIsPressed");
    }
    else if (mouseIsPressed==false)
    {
