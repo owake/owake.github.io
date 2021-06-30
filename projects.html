@@ -190,8 +190,8 @@
     <br>
     <p>
       Many of the mathematical principles which run this site I later modified and adapted
-       to create the visuals in the Luminin
-     </p>
+      to create the visuals in the Luminin
+    </p>
 
   </div>
 
@@ -216,8 +216,8 @@
     <br>
     <br>
     <div class="imageGrid">
-        <img src="media/sunDeity3_wideShot.png"></img>
-        <img src="media/sunDeity4_close.png"></img>
+      <img src="media/sunDeity3_wideShot.png"></img>
+      <img src="media/sunDeity4_close.png"></img>
     </div>
 
     <br>
@@ -242,159 +242,159 @@
 
   </div>
 
-    <div id="03" class="tabcontent">
-      <h1>refracture</h1>
-      <br>
-      <br>
-      <p>"Refracture" was an interactive installation that I designed in 2018</p>
-      <br>
-      <br>
-      <img src="media/refracture1_peter.jpg"></img>
+  <div id="03" class="tabcontent">
+    <h1>refracture</h1>
+    <br>
+    <br>
+    <p>"Refracture" was an interactive installation that I designed in 2018</p>
+    <br>
+    <br>
+    <img src="media/refracture1_peter.jpg"></img>
 
-      <br>
-      <br>
-      <p>It consisted of a mac mini running a Processing that took a webcam input, chopped it up,
-        and back-projected it onto a paper screen that hung from the ceiling </p>
-      <br>
-      <br>
-      <div class="imageGrid">
-          <img src="media/refracture5_noth.png"></img>
-          <img src="media/refracture4_hoda.png"></img>
-      </div>
-
-      <br>
-      <br>
-      <p> The algorithm driving it inspired me to create a series of several video filters.  </p>
-      <br>
-      <img src="media/refracture2.gif"></img>
-      <br>
-      <p> refracture  </p>
-      <br>
-
-      <img src="media/refracture7_mirror.gif"></img>
-      <br>
-      <p> box boil </p>
-
-      <br>
-
-          <img src="media/refracture6_linearBoil.gif"></img>
-
-
-      <br>
-      <p> linear boil demo  </p>
-
-
+    <br>
+    <br>
+    <p>It consisted of a mac mini running a Processing that took a webcam input, chopped it up,
+      and back-projected it onto a paper screen that hung from the ceiling </p>
+    <br>
+    <br>
+    <div class="imageGrid">
+      <img src="media/refracture5_noth.png"></img>
+      <img src="media/refracture4_hoda.png"></img>
     </div>
 
-    <div id="02" class="tabcontent">
-      <h1>interactive visualisers</h1>
-      <br>
-      <p> A space for some of my p5js creations. Put on some music and trip out with these </p>
-      <br>
+    <br>
+    <br>
+    <p> The algorithm driving it inspired me to create a series of several video filters. </p>
+    <br>
+    <img src="media/refracture2.gif"></img>
+    <br>
+    <p> refracture </p>
+    <br>
 
-      <div id='psychwormContainer'></div>
+    <img src="media/refracture7_mirror.gif"></img>
+    <br>
+    <p> box boil </p>
 
-      <p>psychworm </p>
-      <br>
+    <br>
 
-      <!-- <div id='boxywormContainer'></div>
+    <img src="media/refracture6_linearBoil.gif"></img>
+
+
+    <br>
+    <p> linear boil demo </p>
+
+
+  </div>
+
+  <div id="02" class="tabcontent">
+    <h1>interactive visualisers</h1>
+    <br>
+    <p> A space for some of my p5js creations. Put on some music and trip out with these </p>
+    <br>
+
+    <div id='psychwormContainer'></div>
+
+    <p>psychworm </p>
+    <br>
+
+    <!-- <div id='boxywormContainer'></div>
 
       <p>psychworm </p> -->
-      <br>
+    <br>
 
-    </div>
-
-
-    <div id="01" class="tabcontent">
-      <h1>animation</h1>
-      <br>
-      <p>my origins as a visual artist</p>
-      <br>
-      <img src="media/gripgif_10.gif"></img>
-
-    </div>
+  </div>
 
 
+  <div id="01" class="tabcontent">
+    <h1>animation</h1>
+    <br>
+    <p>my origins as a visual artist</p>
+    <br>
+    <img src="media/gripgif_10.gif"></img>
 
-    <script>
-      function openProject(evt, projectName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
+  </div>
 
-        document.getElementById(projectName).style.display = "block";
-        evt.currentTarget.className += " active";
 
+
+  <script>
+    function openProject(evt, projectName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
       }
 
-      // Get the element with id="defaultOpen" and click on it
-      document.getElementById("defaultOpen").click();
-    </script>
-    <script>
-      var tablinks = document.querySelectorAll(".tablinks");
-      var tabcontent = document.querySelectorAll(".tabcontent");
-      var tab = document.querySelector(".tab");
+      document.getElementById(projectName).style.display = "block";
+      evt.currentTarget.className += " active";
 
-      function toggleMenu() {
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
+  <script>
+    var tablinks = document.querySelectorAll(".tablinks");
+    var tabcontent = document.querySelectorAll(".tabcontent");
+    var tab = document.querySelector(".tab");
+
+    function toggleMenu() {
 
 
 
-        // tab expanded
-        if (tablinks[0].style.display === "none") {
+      // tab expanded
+      if (tablinks[0].style.display === "none") {
 
-          for (var i = 0; i < tablinks.length; i++) {
-            tablinks[i].style.display = "block";
-
-          }
-
-          if (window.innerWidth >= 700) {
-            for (var i = 0; i < tabcontent.length; i++) {
-              tabcontent[i].style.width = "75%"
-              tabcontent[i].style.marginLeft = "25%"
-            }
-          }
-          tab.style.height = "100%";
-          tab.style.width = "25%";
+        for (var i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.display = "block";
 
         }
-        // tab collapsed
-        else {
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].style.display = "none";
-          }
 
-          for (var i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.width = "100%"
-            tabcontent[i].style.marginLeft = "0%"
-          }
-
-          tab.style.height = "auto";
-          tab.style.width = "10%";
-
-
-        }
-      }
-
-      function screenCorrection() {
-        if (window.innerWidth > 700 && tablinks[0].style.display == "block") {
-
+        if (window.innerWidth >= 700) {
           for (var i = 0; i < tabcontent.length; i++) {
             tabcontent[i].style.width = "75%"
             tabcontent[i].style.marginLeft = "25%"
           }
         }
+        tab.style.height = "100%";
+        tab.style.width = "25%";
+
+      }
+      // tab collapsed
+      else {
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.display = "none";
+        }
+
+        for (var i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.width = "100%"
+          tabcontent[i].style.marginLeft = "0%"
+        }
+
+        tab.style.height = "auto";
+        tab.style.width = "10%";
 
 
       }
+    }
 
-      window.addEventListener("resize", screenCorrection);
-    </script>
+    function screenCorrection() {
+      if (window.innerWidth > 700 && tablinks[0].style.display == "block") {
+
+        for (var i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.width = "75%"
+          tabcontent[i].style.marginLeft = "25%"
+        }
+      }
+
+
+    }
+
+    window.addEventListener("resize", screenCorrection);
+  </script>
 
 
 </body>
