@@ -61,10 +61,11 @@ a
   font-family: 'Major Mono Display', monospace;
   color: white;
   width:25%;
+  word-break: break-all; 
   float: left;
   display: block;
   text-align: center;
-  padding: 14px 16px;
+  padding: 16px 14px;
   text-decoration: none;
 
 }
@@ -235,7 +236,15 @@ display: block;
   border: white 1px solid;
 }
 
+@media screen and (max-width: 400px){
+  .navbar a {
+    padding: 24px 14px;
+  }
+}
+
+
 @media screen and (max-width: 700px) {
+
   .tab {
     width: 100% !important;
    	height: auto !important;
