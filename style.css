@@ -299,7 +299,7 @@ display: block;
 }
 
 .col {
-border: 1px solid #ccc;
+/* border: 1px solid #ccc; */
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -326,8 +326,9 @@ border: 1px solid #ccc;
   line-height: 2;
 }
 .col-image {
+  /* height: 100%; */
   background-size: cover;
-  background-position: top;
+  background-position: center;
 
 }
 
