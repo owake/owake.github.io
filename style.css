@@ -44,8 +44,32 @@ a
   font-weight: 200;
 }
 
+.footer {
+  margin-bottom:0px;
+  position: fixed;
+  border: 1px solid #ccc;
+  width: 100%;
+  left:0;
+  bottom:0;
+  background-color: rgba(23,23,23,0);
+  z-index: 3;
+}
 
+.footer a {
+  font-family: 'Source Code Pro' , monospace;
+  color: white;
+  width:50%;
+  float: left;
+  display: block;
+  text-align: center;
+  size:11px;
+  text-decoration: none;
+}
 
+.footer a:hover {
+  background-color: rgba(100, 100, 100, 0.6);
+
+}
 .navbar {
   border: 1px solid #ccc;
   overflow: hidden;
@@ -61,7 +85,7 @@ a
   font-family: 'Major Mono Display', monospace;
   color: white;
   width:25%;
-  word-break: break-all; 
+  word-break: break-all;
   float: left;
   display: block;
   text-align: center;
@@ -72,17 +96,7 @@ a
 .navbar a:hover {
   background-color: rgba(100, 100, 100, 0.6);
 }
-.navbar p {
-  font-family: 'Source Code Pro' , monospace;
-  color: white;
-  width:50%;
-  float: left;
-  display: block;
-  text-align: center;
-  size:11px;
-  text-decoration: none;
 
-}
 
 
 ul {
@@ -281,6 +295,12 @@ display: block;
 
 /* Bio Page Stuff */
 
+
+
+
+
+
+
 .col-text {
   /* height:30em; */
 }
@@ -289,6 +309,7 @@ display: block;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -300,7 +321,8 @@ display: block;
 }
 
 .col {
-border: 1px solid #ccc;
+/* border: 1px solid #ccc; */
+/* height:100%; */
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -317,18 +339,21 @@ border: 1px solid #ccc;
   align-items: flex-start;
   justify-content: center;
 }
-.Aligner-item {
-  width: 90%;
-}
-.col-text div p{
+.col-text p{
   color: white;
   font-family: 'Source Code Pro', monospace;
-  font-size: 16;
+  font-size: 100%;
   line-height: 2;
 }
+.Aligner-item {
+  width: 90%;
+
+}
+
 .col-image {
   background-size: cover;
   background-position: top;
+  /* height:100%; */
 
 }
 
