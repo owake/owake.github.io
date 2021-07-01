@@ -66,7 +66,10 @@
       innovate the visual aspects of their performance while on a budget.</p>
     <br>
     <br>
-    <img src="media/lumininGif1_intro.gif"></img>
+    <div class="imageContainer">
+      <img src="media/lumininGif1_intro.gif"></img>
+    </div>
+
 
     <br>
     <p>
@@ -80,7 +83,6 @@
 
     </div>
 
-    <p> _______________________________</p>
     <p>
       The Pi runs a Processing sketch which uses data to create a series of animations and displays them across two hand built 26x52” LED screens.
     </p>
@@ -102,21 +104,21 @@
       motivations behind this project, you can download a copy of the pdf <a href="media/G_21SP_ShouvalO_Thesis-signedLB.pdf" download> here </a>
 
     </p>
-    <p> _______________________________</p>
+    <p> </p>
     <p>
       - action gifs -
     </p>
-    <p> _______________________________</p>
+    <p> </p>
 
 
     <img src="media/lumininGif3_riper.gif"></img>
-    <p> _______________________________</p>
+    <br>
     <img src="media/lumininGif4_unfamiliar.gif"></img>
-    <p> _______________________________</p>
+    <br>
     <img src="media/lumininGif2_jkolitm.gif"></img>
-    <p> _______________________________</p>
+    <br>
     <img src="media/lumininGif6_red.gif"></img>
-    <p> _______________________________</p>
+    <br>
     <img src="media/lumininGif5_hdme.gif"></img>
 
   </div>
@@ -268,7 +270,9 @@
     <br>
     <p> The algorithm driving it inspired me to create a series of several video filters. </p>
     <br>
-    <img src="media/refracture2.gif"></img>
+    <div class="imageContainer">
+      <img src="media/refracture2.gif"></img>
+    </div>
     <br>
     <p> refracture </p>
     <br>
@@ -324,8 +328,6 @@
       tabcontent = document.getElementsByClassName("tabcontent");
       for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
-
-
       }
       tablinks = document.getElementsByClassName("tablinks");
       for (i = 0; i < tablinks.length; i++) {
@@ -333,6 +335,8 @@
       }
 
       document.getElementById(projectName).style.display = "block";
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0;
       evt.currentTarget.className += " active";
 
     }
@@ -348,39 +352,58 @@
     function toggleMenu() {
 
 
-
+      console.log(tablinks[0].style.display);
       // tab expanded
-      if (tablinks[0].style.display === "none") {
+      if (tablinks[0].style.display == "none"||tablinks[0].style.display == "") {
 
         for (var i = 0; i < tablinks.length; i++) {
           tablinks[i].style.display = "block";
 
         }
-
+console.log(tablinks[0].style.display);
+        for (var i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.paddingLeft = "8%";
+          tabcontent[i].style.paddingRight = "8%";
+        }
         if (window.innerWidth >= 700) {
           for (var i = 0; i < tabcontent.length; i++) {
             tabcontent[i].style.width = "75%"
             tabcontent[i].style.marginLeft = "25%"
+
+
           }
         }
         tab.style.height = "100%";
         tab.style.width = "25%";
+        tab.style.border = "white 1px solid";
+        tab.style.borderTop = "none";
+
 
       }
       // tab collapsed
       else {
+
+
         for (i = 0; i < tablinks.length; i++) {
           tablinks[i].style.display = "none";
         }
-
+        console.log(tablinks[0].style.display);
         for (var i = 0; i < tabcontent.length; i++) {
           tabcontent[i].style.width = "100%"
           tabcontent[i].style.marginLeft = "0%"
+          if (window.innerWidth > 700){
+            tabcontent[i].style.paddingLeft = "12%";
+            tabcontent[i].style.paddingRight = "12%";
+          }
+
+
         }
 
         tab.style.height = "auto";
         tab.style.width = "10%";
-
+        if (window.innerWidth >= 700) {
+          tab.style.border = "white 0px solid";
+        }
 
       }
     }

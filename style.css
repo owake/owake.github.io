@@ -151,7 +151,9 @@ ul {
   /* font-family:'Major Mono Display'; */
   text-align:center;
 }
-
+#tablinks{
+  display: block;
+}
 
 /* Tab Section */
 .tab button:hover {
@@ -168,10 +170,11 @@ ul {
   /* background-color: rgba(23,20,20,1.0); */
   border: 0px solid #ccc;
   margin-left: 25% ;
-  padding: 3% 10%;
-  width: 75% ;
-  text-align: center;
+  padding-left: 8% ;
+  padding-right: 8% ;
+  width: 75%;
   display: none;
+
 
 }
 
@@ -181,11 +184,15 @@ ul {
   font-family: 'Source Code Pro', monospace;
   font-weight: 100;
   font-size: 14px;
-  width: 100%;
-display: block;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 
 }
 .tabcontent h1 {
+  text-align: center;
+  display: block;
   color: white;
   text-decoration: none;
   font-family: 'Major Mono Display', monospace;
@@ -193,6 +200,9 @@ display: block;
 }
 .tabcontent img{
   width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border: 0px solid white;
   max-width: 700px;
 }
@@ -200,14 +210,18 @@ display: block;
 .imageGrid{
 margin-bottom: 10px;
 width: 100%;
+text-align: center;
+
 display: block;
 }
 .imageGrid img
 {
   width: 49%;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
   max-width: 350px;
+
+
   display: inline;
 
 }
@@ -262,7 +276,9 @@ display: block;
     width: 100% !important;
    	height: auto !important;
     position: relative !important;
+
   }
+
   .tab button{
       display: none;
       text-align: center !important;
@@ -270,9 +286,7 @@ display: block;
 
   .tab .icon
   {
-      display:
-
-      block !important;
+      display:block !important;
       text-align: center !important;
     }
 
@@ -339,9 +353,10 @@ display: block;
 }
 .col-text p{
   color: white;
+
   font-family: 'Source Code Pro', monospace;
-  font-size: 16;
-  line-height: 2;
+  font-size: 2vh;
+  line-height: 1.5;
 }
 .col-image {
   /* height: 100%; */
