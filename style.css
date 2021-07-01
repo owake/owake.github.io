@@ -71,16 +71,30 @@ a
 .navbar a:hover {
   background-color: rgba(100, 100, 100, 0.6);
 }
-.navbar p {
-  font-family: 'Source Code Pro' , monospace;
+.socialBar {
+  border: 1px solid #ccc;
+  overflow: hidden;
+  display:block;
+  background-color: #171717;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+
+}
+.socialBar a {
+  font-family: 'Major Mono Display', monospace;
   color: white;
   width:50%;
   float: left;
   display: block;
   text-align: center;
-  size:11px;
+  padding: 16px 14px;
   text-decoration: none;
 
+}
+.socialBar a:hover {
+  background-color: rgba(100, 100, 100, 0.6);
 }
 
 
@@ -235,11 +249,11 @@ display: block;
   border: white 1px solid;
 }
 
-@media screen and (max-width: 400px){
+/* @media screen and (max-width: 400px){
   .navbar a {
     padding: 24px 14px;
   }
-}
+} */
 
 
 @media screen and (max-width: 700px) {
@@ -281,9 +295,12 @@ display: block;
 /* Bio Page Stuff */
 
 .col-text {
-  /* height:30em; */
+  /* height:90em; */
 }
 .grid-flex {
+  height:100vh;
+  /* padding-top: 1vh;
+  padding-bottom:  1vh; */
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -312,14 +329,15 @@ display: block;
   order: -1;
 }
 .col-text{
+
   display: flex;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   justify-content: center;
 }
 .Aligner-item {
   width: 90%;
 }
-.col-text div p{
+.col-text p{
   color: white;
   font-family: 'Source Code Pro', monospace;
   font-size: 16;
